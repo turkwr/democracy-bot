@@ -1,0 +1,46 @@
+{
+  "name": "democracy-bot",
+  "version": "1.0.0",
+  "description": "Every mod action goes to a vote.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "deploy": "tsx src/deploy-commands.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turkwr/democracy-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/turkwr/democracy-bot/issues"
+  },
+  "homepage": "https://github.com/turkwr/democracy-bot#readme",
+  "dependencies": {
+    "@turkwr/logger": "^1.0.1",
+    "better-sqlite3": "^12.11.1",
+    "discord.js": "^14.26.4",
+    "dotenv": "^17.4.2",
+    "node-cron": "^4.5.0"
+  },
+  "overrides": {
+    "chalk": "4"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true,
+    "esbuild@0.28.1": true
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^26.0.1",
+    "@types/node-cron": "^3.0.11",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
